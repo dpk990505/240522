@@ -1,0 +1,64 @@
+div{
+    color: white;
+}
+.container{
+    width: 400;
+    padding: 1rem;
+    margin: 0 auto;
+    border: solid 1px black;
+    background-color: gainsboro;
+}
+
+.container::after
+{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.box{
+    width: 100px;
+    height: 100px;
+}
+
+.red-box{
+    background-color: red;
+    float: left;
+    transition-duration: 2s;
+    transition-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+.red-box:hover
+{
+    background-color: blueviolet;
+    color: yellow;
+    width: 300px;
+
+}
+
+.green-box{
+    background-color: green;
+    float: left;
+    transition-duration: 2s;
+    transition-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+.green-box:hover
+{
+    background-color: aqua;
+    width: 300px;
+    color: black;
+}
+
+.blue-box{
+    background-color: blue;
+    float: left;
+    transition-duration: 2s;
+    transition-timing-function: cubic-bezier(0.68, 0.08, 0.88, 0.09);
+}
+
+.blue-box:hover
+{
+    background-color: chocolate;
+    width: 300px;
+}
